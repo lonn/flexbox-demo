@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap");
 
 body {
   font-family: Roboto, sans-serif;
@@ -119,4 +119,24 @@ section.info-container {
   border: 2px solid;
   border-radius: 8px;
   border-color: #3882f6;
+}
+
+.quote-container {
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding: 150px 300px;
+}
+
+.quote-text {
+  font-size: 36px;
+  color: #1f2937;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.quote-author {
+  align-self: flex-end;
+  font-weight: bold;
+  font-size: 18px;
 }
