@@ -1,18 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
-  /* background: #aaa; */
   color: #333;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
-header {
+
+.layer1 {
   background: #1f2937;
+  padding-bottom: 5rem;
+}
+
+.layer2 {
+  padding-bottom: 3rem;
+}
+
+.layer3 {
+  background-color: #ccc;
+  padding: 5rem 0;
+}
+
+.layer4 {
+  padding: 4rem 1rem;
+}
+
+header {
+  max-width: 900px;
+  margin: 0 auto;
   color: #f9faf8;
-  padding: 18px 160px 100px;
+  padding: 1rem;
 }
 
 nav {
@@ -23,7 +43,6 @@ nav {
 }
 
 .logo {
-  /* color: #f9faf8; */
   font-size: 24px;
 }
 
@@ -32,11 +51,11 @@ ul.header-links {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .header-links a {
-  color: #e5e7eb;
+  color: #ccc;
   font-size: 18px;
   text-decoration: none;
 }
@@ -45,7 +64,7 @@ ul.header-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  gap: 2rem;
 }
 
 .hero-text {
@@ -67,27 +86,27 @@ ul.header-links {
 }
 
 .hero-desc {
-  color: #e5e7eb;
+  color: #ccc;
   font-size: 18px;
   margin-bottom: 12px;
 }
 
 .hero-image {
-  width: 400px;
-  height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
-  background-color: #aaa;
+  background-color: #ccc;
+  overflow: hidden;
 }
 
 section.info-container {
   text-align: center;
-  padding: 0px 160px 100px;
-  background-color: white;
   display: flex;
   flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .info-container h2 {
@@ -98,6 +117,8 @@ section.info-container {
 .info-list {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .info {
@@ -122,10 +143,11 @@ section.info-container {
 }
 
 .quote-container {
-  background-color: #e5e7eb;
   display: flex;
   flex-direction: column;
-  padding: 150px 300px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .quote-text {
@@ -146,8 +168,8 @@ section.market {
   align-items: center;
   justify-content: space-around;
   background-color: #3882f6;
-  width: 900px;
-  margin: 60px auto;
+  max-width: 900px;
+  margin: 0 auto;
   padding: 40px;
   border-radius: 8px;
 }
@@ -159,8 +181,12 @@ section.market {
 
 .market-text-desc {
   font-weight: lighter;
-  color: #e5e7eb;
+  color: #ccc;
   font-size: 12px;
+}
+
+.market-button {
+  flex-shrink: 0;
 }
 
 .market-button button {
@@ -175,6 +201,6 @@ footer {
   display: flex;
   justify-content: center;
   background-color: #1f2937;
-  color: #e5e7eb;
+  color: #ccc;
   padding: 20px 0;
 }
